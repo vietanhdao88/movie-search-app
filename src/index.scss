@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "DM Sans", sans-serif;
+}
+@layer base {
+  body {
+    @apply bg-slate-900 font-body;
+  }
+}
+@layer components {
+  .page-container {
+    max-width: 1280px;
+    @apply mx-auto;
+  }
+}
+.movie-list .swiper-slide {
+  height: auto;
+}
+.pagination li {
+  display: block;
+  padding: 12px;
+  background: white;
+  color: #000;
+  line-height: none;
+  border-radius: 8px;
+}
+.pagination li.selected {
+  background: #f62682;
+  color: white;
+}
+.pagination li.next a,
+li.previous a {
+  text-transform: capitalize !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
